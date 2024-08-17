@@ -1,0 +1,160 @@
+/**
+ * ItcSlider
+ * @version 1.0.1
+ * @author https://github.com/itchief
+ * @copyright Alexander Maltsev 2020 - 2023
+ * @license MIT (https://github.com/itchief/ui-components/blob/master/LICENSE)
+ * @tutorial https://itchief.ru/javascript/slider
+ */
+
+.itc-slider {
+  position: relative;
+}
+.itc-slider {
+  overflow: hidden;
+  padding-bottom: 12rem;
+  margin-top: 7rem;
+}
+
+.itc-slider-wrapper {
+
+}
+
+@media (min-width: 768px) {
+  .itc-slider-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .itc-slider-item {
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
+  }
+}
+
+.itc-slider-items {
+  display: flex;
+  transition: transform 0.5s ease;
+  will-change: transform;
+}
+
+.itc-slider-transition-none {
+  transition: none;
+}
+
+
+/* кнопки влево и вправо */
+.itc-slider-btn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15.6rem;
+  height: 8.4rem;
+  text-align: center;
+  border: none;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background: #fff;
+  bottom: -2rem;
+}
+
+.itc-slider-btn-hide {
+  display: none;
+}
+
+.itc-slider-btn-prev {
+  right: 20rem;
+}
+
+.itc-slider-btn-next {
+  right: 1.5rem;
+}
+
+.itc-slider-btn:hover,
+.itc-slider-btn:focus {
+  text-decoration: none;
+  outline: 0;
+}
+
+.itc-slider-btn::before {
+  content: "";
+  display: inline-block;
+  width: 15.6rem;
+  height: 8.4rem;
+  background-size: 100% 100%;
+}
+@media(max-width:1199px){
+  .itc-slider-btn{
+    width: 9.5rem;
+    height: 5.2rem;
+    bottom: 2.5rem;
+  }
+  
+  .itc-slider-btn::before{
+    width: 9.5rem;
+    height: 5.1rem;
+  }
+  .itc-slider-item{
+    flex: 0 0 100%;
+    max-width: 100%;
+    user-select: none;
+    will-change: transform;
+  }
+  .itc-slider-wrapper{
+    overflow: hidden;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .itc-slider-wrapper img{
+    width: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+  }
+  .itc-slider-btn-prev {
+    right: 11.5rem;
+  }
+  .itc-slider-btn-next {
+    right: 0;
+  }
+}
+
+.itc-slider-btn-prev::before {
+  background-image: url(./images/prew.svg);
+}
+
+.itc-slider-btn-next::before {
+  background-image: url(./images/next.svg);
+}
+
+/* индикаторы */
+.itc-slider-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  bottom: 7rem;
+}
+
+.itc-slider-indicator {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 3px;
+  margin-left: 3px;
+  border-radius: 100%;
+  text-indent: -999px;
+  background-color: #D8D8D8;
+  cursor: pointer;
+  
+}
+
+.itc-slider-indicator-active {
+  border: 0.3rem solid #62A8DE;
+}
