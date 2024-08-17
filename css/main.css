@@ -169,7 +169,6 @@ section {
     body{
         background-image: url(../images/bg-mob.jpg);
         background-repeat: no-repeat;
-        background-size: 46.8rem;
-        background-position-y: -8rem;
+        background-size: cover;
     }
 }
