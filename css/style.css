@@ -94,7 +94,7 @@ header {
     }
     .cont-fixed{
         flex-direction: column;
-        padding: 2rem 2rem 2rem 2rem !important;
+        padding: 1rem 2rem 0rem 2rem !important;
     }
     .btn-timer{
         width: 33.5rem;
