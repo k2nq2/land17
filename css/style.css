@@ -379,7 +379,7 @@ header {
 
 .guaranty {
     padding-bottom: -3rem;
-    background: radial-gradient(55.45% 129.03% at 98.12% 35%, rgba(255, 255, 225, 0.212) -100%, rgba(98, 168, 222, 1) 100%);
+    background: radial-gradient(55.45% 129.03% at 98.12% 35%, rgba(255, 255, 225, 1) -100%, rgba(98, 168, 222, 1) 100%);
     padding-top: 0;
     border-radius: 4rem;
     height: 33rem;
