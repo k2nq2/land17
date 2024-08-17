@@ -97,7 +97,11 @@ header {
         padding: 2rem 2rem 2rem 2rem !important;
     }
     .btn-timer{
-        width: 100%;
+        width: 33.5rem;
+        height: 6.4rem;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
     }
 }
 
