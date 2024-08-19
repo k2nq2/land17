@@ -45,6 +45,7 @@ header {
     line-height: 117%;
     text-align: center;
     background: #fff;
+    padding-top:0.3rem;
 }
 #hours,
 #minutes,
