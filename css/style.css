@@ -1481,7 +1481,11 @@ color: #000;
     display: none;
 }
 .bg5{display: none;}
-
+.study{
+    color: rgba(98, 168, 222, 1);
+    text-decoration: underline;
+    display: inline;
+}
 @media(max-width:1199px){
     .header-title{
         font-size: 5rem;
